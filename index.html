@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Benny | Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+            overflow: hidden;
+            animation: backgroundMove 10s infinite alternate linear;
+        }
+        @keyframes backgroundMove {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            animation: neonGlow 2s infinite alternate;
+        }
+        @keyframes neonGlow {
+            from { text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 40px #00d9ff; }
+            to { text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff; }
+        }
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            animation: slideIn 2s ease-in-out;
+        }
+        .about, .projects, .contact {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .about:hover, .projects:hover, .contact:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.9);
+        }
+        a {
+            color: #00d9ff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Alan Benny</h1>
+    <p>BCA Student | Developer | Tech Enthusiast</p>
+    
+    <div class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate BCA student exploring the world of technology, with a keen interest in web development and software solutions.</p>
+    </div>
+
+    <div class="projects">
+        <h2>Projects</h2>
+        <p>Canteen Food Ordering Management System</p>
+        <p>Expense Tracker Web Application</p>
+    </div>
+    
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:alanbenny.n05@gmail.com">alanbenny.n05@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Alanbenny05" target="_blank">Alanbenny05</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/alan-benny-0144bb2a4" target="_blank">Alan Benny</a></p>
+    </div>
+</body>
+</html>
